@@ -154,7 +154,7 @@ h6 {
     list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
     position: relative;
     white-space: nowrap;
 }
@@ -180,7 +180,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover > a {
+.nav-menu li:hover>a {
     text-decoration: none;
     color: #fff;
 }
@@ -188,7 +188,7 @@ h6 {
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover > a i {
+.nav-menu li:hover>a i {
     color: #149ddd;
 }
 
@@ -228,9 +228,9 @@ h6 {
 #hero {
     width: 100%;
     height: 100vh;
-    /* background: url("../img/hero-bg.jpg") top center; */
+    background: url("../img/hero-bg.jpg") top center;
     background-size: cover;
-    background-color: #18d26e;
+    /* background-color: #18d26e; */
 }
 
 #hero:before {
@@ -276,6 +276,7 @@ h6 {
     #hero {
         background-attachment: fixed;
     }
+
     .iconHandler {
         display: grid;
         place-content: center;
@@ -459,22 +460,23 @@ section {
     transition: 0.9s;
     background-color: #149ddd;
 }
+
 /* written by sajal */
 
-.grid-design{
+.grid-design {
     display: grid;
     grid-template-columns: auto auto;
 }
 
-@media screen and (min-width: 768px){
-    .grid-design{
+@media screen and (min-width: 768px) {
+    .grid-design {
         grid-template-columns: auto auto auto;
     }
 }
 
 
-@media screen and (min-width: 1024px){
-    .grid-design{
+@media screen and (min-width: 1024px) {
+    .grid-design {
         display: grid;
         grid-template-columns: auto auto auto auto;
     }
@@ -541,11 +543,13 @@ section {
     background: #fff;
     border: 2px solid #1f5297;
 }
+
 .modified-bar {
     padding: 0 0 20px 20px;
     margin-top: -2px;
     position: relative;
 }
+
 .modified-bar h5 {
     font-size: 16px;
     background: #e4edf9;
@@ -562,6 +566,7 @@ section {
 .modified-bar ul li {
     padding-bottom: 10px;
 }
+
 .modified-bar::before {
     content: "";
     position: absolute;
@@ -573,6 +578,7 @@ section {
     background: #fff;
     border: 2px solid #1f5297;
 }
+
 .modified-bar::after {
     content: "";
     position: absolute;
@@ -596,18 +602,20 @@ section {
         border: 1px solid #1f5297;
     }
 }
+
 @media screen and (min-width: 1280px) {
-  .modified-bar::after {
-      content: "";
-      position: absolute;
-      width: 1px;
-      height: 480px;
-      left: -2px;
-      top: 8%;
-      background: #fff;
-      border: 1px solid #1f5297;
-  }
+    .modified-bar::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 480px;
+        left: -2px;
+        top: 8%;
+        background: #fff;
+        border: 1px solid #1f5297;
+    }
 }
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -653,25 +661,27 @@ section {
     overflow: hidden;
     z-index: 1;
 }
-.portfolio .title-on-image{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  color: black;
-  opacity: 0;
-  transform: translateY(20%);
+
+.portfolio .title-on-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+    opacity: 0;
+    transform: translateY(20%);
 }
-.portfolio-wrap:hover .title-on-image{
-  transition: all ease-in-out 0.3s;
-  transition-delay: 100ms;
-  transform: translateY(0%);
-  opacity: 1;
+
+.portfolio-wrap:hover .title-on-image {
+    transition: all ease-in-out 0.3s;
+    transition-delay: 100ms;
+    transform: translateY(0%);
+    opacity: 1;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -712,7 +722,7 @@ section {
     background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolio-wrap .portfolio-links a + a {
+.portfolio .portfolio-wrap .portfolio-links a+a {
     border-left: 1px solid #37b3ed;
 }
 
@@ -745,10 +755,7 @@ section {
     position: relative;
 }
 
-.portfolio-details
-    .portfolio-details-slider
-    .swiper-pagination
-    .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: #fff;
@@ -756,10 +763,7 @@ section {
     border: 1px solid #149ddd;
 }
 
-.portfolio-details
-    .portfolio-details-slider
-    .swiper-pagination
-    .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #149ddd;
 }
 
@@ -782,7 +786,7 @@ section {
     font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
     margin-top: 10px;
 }
 
@@ -1053,7 +1057,7 @@ section {
     font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
     margin-top: 25px;
 }
 
@@ -1164,11 +1168,11 @@ section {
     font-size: 15px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
     padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
     display: inline-block;
     padding-right: 10px;
     color: #0e2442;
@@ -1233,37 +1237,42 @@ section {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
+
     100% {
         transform: scale(1);
     }
 }
 
 .download-button {
-  display: inline-block;
-  position: relative;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 4px;
-  overflow: hidden;
-  cursor: pointer;
-  animation: button-animation 2s infinite;
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    animation: button-animation 2s infinite;
 }
-.download-button:hover{
-  background-color: #149ddd;
-  transition: 0.5s ease-in-out;
-  border: 1px solid #149ddd;
+
+.download-button:hover {
+    background-color: #149ddd;
+    transition: 0.5s ease-in-out;
+    border: 1px solid #149ddd;
 }
+
 .button-text {
     display: inline-block;
     vertical-align: middle;
 }
+
 /* .image-overlay {
   position: absolute;
   top: 0;
@@ -1273,29 +1282,32 @@ section {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed 
 } */
 /* portfolio modal */
-.img-size{
-  /* 	padding: 0;
+.img-size {
+    /* 	padding: 0;
     margin: 0; */
     height: 450px;
     width: 700px;
     background-size: cover;
     overflow: hidden;
-  }
-  .modal-content {
-     width: 700px;
-    border:none;
-  }
-  .modal-body {
-     padding: 0;
-  }
-  
-  .carousel-control-prev-icon {
+}
+
+.modal-content {
+    width: 700px;
+    border: none;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
     width: 30px;
     height: 48px;
-  }
-  .carousel-control-next-icon {
+}
+
+.carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
     width: 30px;
     height: 48px;
-  }
+}
